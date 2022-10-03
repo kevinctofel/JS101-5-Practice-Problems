@@ -2,18 +2,14 @@
 
 let arr = [{ a: 1 }, { b: 2, c: 3 }, { d: 4, e: 5, f: 6 }];
 
-let newArr = {};
 
-arr.map((element) => {
+let newObj = arr.map(element => {
+  let newArr = {};
 
-    for (const key in element) {
-            newArr[key] = element[key] + 1;
-            // console.log(element[key] ++);
+  for (let key in element) {
+    newArr[key] = element[key] + 1;
+  }
+  return newArr;
+});
 
-        }
-    });
-
-    // element['a'] = (element['a'] + 1);
-    // console.log(element);
-
-console.log(newArr);
+console.log (newObj);
