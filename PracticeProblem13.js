@@ -3,7 +3,7 @@
 // Expected result: [ [ 1, 8, 3 ], [ 1, 6, 7 ], [ 1, 5, 3 ] ]
 
 let arr = [[1, 6, 7], [1, 5, 3], [1, 8, 3]];
-
+let arrayUnsorted = [];
 const sumOfOdds = (arr) => {
 
   arr.forEach(subArray => {
@@ -15,8 +15,9 @@ const sumOfOdds = (arr) => {
       }
 
     })
-    console.log(total);
+    arrayUnsorted.push(total);
   })
 }
 
 sumOfOdds(arr);
+console.log(arrayUnsorted);
